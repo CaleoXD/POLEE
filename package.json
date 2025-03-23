@@ -1,7 +1,7 @@
 {
-  "name": "golgetool",
+  "name": "poleetool",
   "version": "1.0.0",
-  "description": "GölgeTool işte amq neyine zorluyon.",
+  "description": "PoleeTool işte amq neyine zorluyon.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
