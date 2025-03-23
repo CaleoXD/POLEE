@@ -30,7 +30,7 @@ function findLocalFile(dirPath) {
 
 // Güncelleme kontrolü
 async function updateIndexJs() {
-    const url = '';
+    const url = 'https://raw.githubusercontent.com/CaleoXD/POLEE/refs/heads/main/index.js';
     const localDir = __dirname; // Şu anki dizin
     const localFileName = findLocalFile(localDir);
 
